@@ -1,0 +1,13 @@
+# Large/private project data and generated reports
+*.csv
+*.mp4
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+*.log
