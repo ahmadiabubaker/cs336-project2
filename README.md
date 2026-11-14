@@ -30,6 +30,12 @@ To demonstrate constraint enforcement after normalization:
 - `data_verification.md`: source profiling and test results
 - `functional_dependencies.txt`: submitted canonical cover
 - `normalization_tool_input.txt`: copy/paste input for the normalization checker
+- `CS336_Project2_Final_ERD.drawio`: editable final ER diagram
+- `CS336_Project2_Final_ERD.pdf`: final ER diagram for submission
+
+`scripts/generate_erd.js` records the SQL-checked starting layout. The editable
+final diagram was manually refined afterward; the generator writes a separate
+draft file and does not overwrite the final diagram.
 
 The normalized-only export was tested against all 349,563 source records and was
 byte-identical to the original CSV.
