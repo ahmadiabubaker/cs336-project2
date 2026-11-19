@@ -3,6 +3,18 @@
 Normalization of the 2017 New Jersey HMDA dataset from the Project 1
 `Preliminary` table into a constrained PostgreSQL schema.
 
+## Group members
+
+Replace the placeholders below with each group member's full name and Rutgers NetID.
+Add or remove rows as needed before submission.
+
+| Full name | Rutgers NetID |
+| --- | --- |
+| TODO | TODO |
+| TODO | TODO |
+| TODO | TODO |
+| TODO | TODO |
+
 ## SQL execution order
 
 From `psql`, while the current directory contains these files:
