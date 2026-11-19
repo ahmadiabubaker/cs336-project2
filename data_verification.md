@@ -10,8 +10,9 @@
 - Malformed rows: 0
 - Duplicate headers: 0
 
-The file was read without modification by `scripts/profile_project2.py`. The
-profiler streams the CSV and treats source blanks as values during dependency
+The file was read without modification by a local-only helper,
+`scripts/profile_project2.py`, which is excluded from the submission repository.
+The profiler streams the CSV and treats source blanks as values during dependency
 testing, so a mixture of a blank and a nonblank right-hand side for one determinant
 would be reported as a violation.
 

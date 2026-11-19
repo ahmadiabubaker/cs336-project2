@@ -23,6 +23,10 @@ To demonstrate constraint enforcement after normalization:
 \i 05_invalid_insert_tests.sql
 ```
 
+For the Step 3 video, run `\i 06_show_tables.sql` after normalization. It shows
+`SELECT *` for all 24 final tables, pausing each result in the pager; press `q`
+to advance after the first screen of each table. Keep the video under one minute.
+
 ## Project documents
 
 - `Project.md`: assignment handout
@@ -30,12 +34,12 @@ To demonstrate constraint enforcement after normalization:
 - `data_verification.md`: source profiling and test results
 - `functional_dependencies.txt`: submitted canonical cover
 - `normalization_tool_input.txt`: copy/paste input for the normalization checker
-- `CS336_Project2_Final_ERD.drawio`: editable final ER diagram
-- `CS336_Project2_Final_ERD.pdf`: final ER diagram for submission
+- `06_show_tables.sql`: optional Step 3 video helper
+- `CS336_Project2_Final_ERD.drawio`: editable final ER diagram with explicit minimum and maximum cardinalities
+- `CS336_Project2_Final_ERD.pdf`: cropped PDF export of the final ER diagram
 
-`scripts/generate_erd.js` records the SQL-checked starting layout. The editable
-final diagram was manually refined afterward; the generator writes a separate
-draft file and does not overwrite the final diagram.
+Class lecture PDFs and local profiling/diagram-generation helpers are excluded
+from Git; they are not needed to run the submitted SQL scripts.
 
 The normalized-only export was tested against all 349,563 source records and was
 byte-identical to the original CSV.

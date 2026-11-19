@@ -11,6 +11,18 @@ CS336 Project 2 - Functional Dependencies (Canonical Cover)
   denial_reason_code in the application_denial_reason table.
 - The original numbered race and denial-reason columns are removed by the 1NF
   transformation.
+- applicant_ethnicity and co_applicant_ethnicity both use the ethnicity code
+  domain, so their two FDs below are stored in one shared ETHNICITY table
+  (ethnicity_code -> ethnicity_name). Likewise applicant_sex and co_applicant_sex
+  share one SEX table (sex_code -> sex_name), and both race join tables share one
+  RACE table.
+
+Extra table justification:
+- RESPONDENT (agency_code, respondent_id) is the one table not required by an FD.
+  We keep it because a reporting institution is a real entity identified by the
+  PAIR (agency_code, respondent_id): respondent_id alone does not determine
+  agency_code (see Excluded dependencies). The foreign key from application to
+  respondent rejects any application whose agency/respondent pair does not exist.
 
 {application_id} -> {as_of_year, agency_code, respondent_id, loan_type, property_type, loan_purpose, owner_occupancy, loan_amount_000s, preapproval, action_taken, location_id, applicant_ethnicity, co_applicant_ethnicity, applicant_sex, co_applicant_sex, applicant_income_000s, purchaser_type, rate_spread, hoepa_status, lien_status, edit_status, application_date_indicator}
 

@@ -2,6 +2,10 @@
 *.csv
 *.mp4
 
+# Local course references and development-only helpers (not submission files)
+/class files/
+/scripts/
+
 # Python cache and local environments
 __pycache__/
 *.py[cod]
