@@ -5,6 +5,9 @@
 # Local course references and development-only helpers (not submission files)
 /class files/
 /scripts/
+/Project.md
+/design.md
+/normalization_tool_input.txt
 
 # Python cache and local environments
 __pycache__/
