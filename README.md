@@ -29,14 +29,14 @@ to advance after the first screen of each table. Keep the video under one minute
 
 ## Project files
 
-- `data_verification.md`: source profiling and test results
 - `functional_dependencies.txt`: submitted canonical cover
 - `06_show_tables.sql`: optional Step 3 video helper
 - `CS336_Project2_Final_ERD.drawio`: editable final ER diagram with explicit minimum and maximum cardinalities
 - `CS336_Project2_Final_ERD.pdf`: cropped PDF export of the final ER diagram
 
-Course handouts, the earlier design plan, and local profiling/diagram-generation
-helpers are excluded from Git; they are not needed to run the submitted SQL scripts.
+Course handouts, the earlier design and verification notes, and local
+profiling/diagram-generation helpers are excluded from Git; they are not needed
+to run the submitted SQL scripts.
 
 The normalized-only export was tested against all 349,563 source records and was
 byte-identical to the original CSV.
